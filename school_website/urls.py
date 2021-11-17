@@ -10,12 +10,14 @@ from django.urls import path, include
 from django.contrib.auth import views as auth_views
 from django.conf import settings
 from django.conf.urls.static import static
+from education import views as education_views
 
 
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('application/', education_views.application, name="application"),
     path('', include('education.urls')),
 
 

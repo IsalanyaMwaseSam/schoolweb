@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from django.contrib.auth import authenticate, login
+from education.models import Application
+
 
 
 # Create your views here.
@@ -39,15 +40,36 @@ def theology(request):
 def about(request):
     return render(request, 'education/about.html')
 
-def application(request):
-    return render(request, 'education/application.html')
 
 
 def starter(request):
     return render(request, 'education/starter.html')
 
 
+def application(request):
+    if request.method == "POST":
+        first_name = request.POST.get('first_name')
+        other_names = request.POST.get('other_names')
+        gender = request.POST.get('gender')
+        courses = request.POST.get('courses')
+        Date_of_birth = request.POST.get('Date_of_birth')
+        residence = request.POST.get('residence')
+        nationality = request.POST.get('nationality')
+        phone = request.POST.get('phone')
+        where = request.POST.get('where')
+        file1 = request.POST.get('file1')
+        file2 = request.POST.get('file2')
+        file3 = request.POST.get('file3')
+        email = request.POST.get('email')
+        other_contact = request.POST.get('other_contact')
+        application = Application(first_name=first_name, other_names=other_names, courses=courses, gender=gender,
+        Date_of_birth=Date_of_birth, residence=residence, nationality=nationality, phone=phone,
+        where=where, file1=file1, file2=file2, file3=file3, email=email, other_contact=other_contact)
+        application.save()
+    return render(request, 'education/application.html')
 
+
+    
 
 
 

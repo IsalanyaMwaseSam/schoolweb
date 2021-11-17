@@ -1,3 +1,4 @@
+import django_heroku
 """
 Django settings for school_website project.
 
@@ -148,3 +149,7 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = "eazikezi1999@gmail.com"
 EMAIL_HOST_PASSWORD = "sammies1999"
+
+
+#activate django-heroku
+django_heroku.settings(locals())

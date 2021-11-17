@@ -48,18 +48,18 @@ body {
 -->
 
 <h3 style="padding-left: 50px;">NOTE: Certified copies of academic transcript, copies of both ‘0’ level and ‘A’ level result slips/Certificates, valid identification (driving permit, passport, current employer ID card or ID card from your previous institution) should be attached to this form. We shall need the originals of the above copies at registration.</h3>
-<form action="/admin/" method="post">
+<form action=" " method="post">
     {% csrf_token %}
 <h3 style="padding-left: 50px;">Study Location</h3>
 <div style="padding-left: 50px;" class="input-group mb-3">
     <!--<label class="input-group-text" for="inputGroupSelect01">Study Location</label>-->
     <select class="form-select" id="inputGroupSelect01">
       <option selected>Choose...</option>
-      <option value="1">Main Campus</option>
+      <!--<option value="1">Main Campus</option>
       <option value="2">Kampala Campus</option>
       <option value="3">Mbale Campus</option>
       <option value="3">Arua Campus</option>
-      <option value="3">Kasese Campus</option>
+      <option value="3">Kasese Campus</option>-->
     </select>
 </div>
 
@@ -68,109 +68,109 @@ body {
     <!--<label class="input-group-text" for="inputGroupSelect01">Study Time</label>-->
     <select class="form-select" id="inputGroupSelect01">
       <option selected>Choose...</option>
-      <option value="1">Day - Kampala Campus</option>
-      <option value="2">Regular - Main Campus</option>
-      <option value="3">Evening</option>
-      <option value="3">In-Service - Holiday</option>
-      <option value="3">Weekend - Master</option>
+      <option name="study" value="1">Day - Kampala Campus</option>
+      <option name="study" value="2">Regular - Main Campus</option>
+      <option name="study" value="3">Evening</option>
+      <option name="study" value="3">In-Service - Holiday</option>
+      <option name="study" value="3">Weekend - Master</option>
     </select>
 </div>
 
 <h3 style="padding-left: 50px;">Select Level</h3>
 <div style="padding-left: 50px;">
-<input style="padding-left: 50px;" type="radio" name="level">Undergraduate<br>
-<input style="padding-left: 50px;" type="radio" name="level">Postgraduate<br>
+<input style="padding-left: 10px;" type="radio" name="undergraduate">Undergraduate<br>
+<input style="padding-left: 10px;" type="radio" name="">Postgraduate<br>
 <h3 style="padding-left: 50px;">Applicants Personal Information</h3>
 </div>
 
 <div style="padding-left: 50px;" class="input-group flex-nowrap">
     <span style="padding-left: 50px;" class="input-group-text" id="addon-wrapping">Sur Name</span>
-    <input style="padding-left: 50px;" type="text" class="form-control" placeholder=" " aria-label="Username" aria-describedby="addon-wrapping">
+    <input style="padding-left: 10px;" type="text" name="first_name" class="form-control" placeholder=" " aria-label="Username" aria-describedby="addon-wrapping" required>
 </div>
 </br>
 <div style="padding-left: 50px;" class="input-group flex-nowrap">
     <span style="padding-left: 50px;" class="input-group-text" id="addon-wrapping">Other Names</span>
-    <input style="padding-left: 50px;" type="text" class="form-control" placeholder=" " aria-label="Username" aria-describedby="addon-wrapping">
+    <input style="padding-left: 10px;" type="text" name="other_names" class="form-control" placeholder=" " aria-label="Username" aria-describedby="addon-wrapping" required>
 </div>
 
 <h3 style="padding-left: 50px;">Select Courses</h3>
 <div style="padding-left: 50px;" class="dropdown">
-  <button style="padding-left: 50px;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+  <button style="padding-left: 50px;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" name="course">
     Select Courses
   </button>
   <ul style="padding-left: 50px; "class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-    <input style="padding-left: 50px;"  type="checkbox" value="" href="#">Action<br/>
-    <input style="padding-left: 50px;"  type="checkbox" value="" href="#">Action<br/>
-    <input style="padding-left: 50px;"  type="checkbox" value="" href="#">Action<br/>
+    <input style="padding-left: 10px;"  type="checkbox" value="" href="#">Action<br/>
+    <input style="padding-left: 10px;"  type="checkbox" value="" href="#">Action<br/>
+    <input style="padding-left: 10px;"  type="checkbox" value="" href="#">Action<br/>
   </ul>
-  <input style="padding-left: 50px;"  type="text" id="text" readonly />
-  <input style="padding-left: 50px;"  type="submit" value="insert courses(S)" class="btn btn-secondary"/>
+  <input style="padding-left: 10px;"  type="text" id="text" readonly />
+  <input style="padding-left: 10px;"  type="submit" value="insert courses(S)" class="btn btn-secondary"/>
 </div>
 
 
 
-<h3 style="padding-left: 50px;">Gender</h3>
+<h3 style="padding-left: 50px;" >Gender</h3>
 <div style="padding-left: 50px;">
-<input style="padding-left: 50px;" type="radio" name="gender">Male<br>
-<input style="padding-left: 50px;" type="radio" name="gender">Female<br>
+<input style="padding-left: 50px;" type="radio" name="male">Male<br>
+<input style="padding-left: 10px;" type="radio" name="female">Female<br>
 </div>
 
 
 <h3 style="padding-left: 50px;">Date Of Birth</h3>
 <div style="padding-left: 50px;">
 <div style="padding-left: 50px;" class="input-group flex-nowrap"></div>
-    <input style="padding-left: 50px;" type="text" class="form-control" placeholder=" " aria-label="Username" aria-describedby="addon-wrapping">
+    <input style="padding-left: 10px;" type="date" class="form-control" placeholder=" " aria-label="Username" aria-describedby="addon-wrapping" name="Date_of_birth" required>
 </div>
 </div>
 
 <h3 style="padding-left: 50px;">Nationality</h3>
 <div style="padding-left: 50px;">
 <div style="padding-left: 50px;" class="input-group flex-nowrap"></div>
-    <input style="padding-left: 50px;" type="text" class="form-control" placeholder=" " aria-label="Username" aria-describedby="addon-wrapping">
+    <input style="padding-left: 10px;" type="text" class="form-control" placeholder=" " aria-label="Username" aria-describedby="addon-wrapping" name="nationality" required>
 </div>
 </div>
 
 <h3 style="padding-left: 50px;">Country Of Residence</h3>
 <div style="padding-left: 50px;">
 <div style="padding-left: 50px;" class="input-group flex-nowrap"></div>
-    <input style="padding-left: 50px;" type="text" class="form-control" placeholder=" " aria-label="Username" aria-describedby="addon-wrapping">
+    <input style="padding-left: 10px;" type="text" class="form-control" placeholder=" " aria-label="Username" aria-describedby="addon-wrapping" name="residence" required>
 </div>
 </div>
 
 <h3 style="padding-left: 50px;">Telephone Number</h3>
 <div style="padding-left: 50px;">
 <div style="padding-left: 50px;" class="input-group flex-nowrap"></div>
-    <input style="padding-left: 50px;" type="text" class="form-control" placeholder=" " aria-label="Username" aria-describedby="addon-wrapping">
+    <input style="padding-left: 10px;" type="telNo" class="form-control" placeholder=" " aria-label="Username" aria-describedby="addon-wrapping" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"required>
 </div>
 </div>
 
 <h3 style="padding-left: 50px;">Email</h3>
 <div style="padding-left: 50px;">
 <div style="padding-left: 50px;" class="input-group flex-nowrap"></div>
-    <input style="padding-left: 50px;" type="text" class="form-control" placeholder=" " aria-label="Username" aria-describedby="addon-wrapping">
+    <input style="padding-left: 10px;" type="email" class="form-control" placeholder="xyz@gmail.com " aria-label="Username" aria-describedby="addon-wrapping" name="email" required>
 </div>
 </div>
 
 <h3 style="padding-left: 50px;">Alternative Contact</h3>
 <div style="padding-left: 50px;" class="input-group flex-nowrap">
     <span style="padding-left: 50px;"class="input-group-text" id="addon-wrapping">Name</span>
-    <input style="padding-left: 50px;" type="text" class="form-control" placeholder=" " aria-label="Username" aria-describedby="addon-wrapping">
+    <input style="padding-left: 10px;" type="text" class="form-control" placeholder=" " aria-label="Username" aria-describedby="addon-wrapping" name="other_contact" required>
 </div>
 
 <h3 style="padding-left: 50px;">Academics</h3>
 <h4 style="padding-left: 50px;">Attach a scanned copy of the UCE certificate or equivalent</h4>
 <div style="padding-left: 50px;"class="mb-3">
-    <input style="padding-left: 50px;" class="form-control" type="file" id="formFile">
+    <input style="padding-left: 10px;" class="form-control" type="file" id="formFile" name="file1">
 </div>
 
 <h4 style="padding-left: 50px;">Attach a scanned copy of the UACE certificate or equivalent</h4>
 <div style="padding-left: 50px;"class="mb-3">
-    <input style="padding-left: 50px;" class="form-control" type="file" id="formFile">
+    <input style="padding-left: 10px;" class="form-control" type="file" id="formFile" name="file2">
 </div>
 
 <h4 style="padding-left: 50px;">Other relevant qualifications</h4>
 <div style="padding-left: 50px;"class="mb-3">
-    <input style="padding-left: 50px;" class="form-control" type="file" id="formFile">
+    <input style="padding-left: 10px;" class="form-control" type="file" id="formFile" name="file3">
 </div>
 <div style="padding-left: 50px;">
 <h4 style="padding-left: 50px;">Where did you learn about Bugema University?</h4>

@@ -13,8 +13,10 @@ urlpatterns = [
     path('education/social/', views.social, name='social'),
     path('education/theology/', views.theology, name='theology'),
     path('education/About_us/', views.about, name='about'),
-    path('education/application/', views.application, name='application'),
     path('education/starter/', views.starter, name='starter'),
+    
+    
+   
     
 
 ]
