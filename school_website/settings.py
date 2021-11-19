@@ -151,5 +151,9 @@ EMAIL_HOST_USER = "eazikezi1999@gmail.com"
 EMAIL_HOST_PASSWORD = "sammies1999"
 
 
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
 #activate django-heroku
 django_heroku.settings(locals())
