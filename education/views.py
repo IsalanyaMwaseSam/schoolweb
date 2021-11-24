@@ -5,6 +5,7 @@ from education.models import Application
 
 # Create your views here.
 def home(request):
+
     return render(request, 'education/home.html', {})
 
 def computing(request):
@@ -50,6 +51,8 @@ def application(request):
     if request.method == "POST":
         first_name = request.POST.get('first_name')
         other_names = request.POST.get('other_names')
+        campus = request.POST.get('campus')
+        study = request.POST.get('study')
         gender = request.POST.get('gender')
         courses = request.POST.get('courses')
         Date_of_birth = request.POST.get('Date_of_birth')
@@ -62,11 +65,11 @@ def application(request):
         file3 = request.POST.get('file3')
         email = request.POST.get('email')
         other_contact = request.POST.get('other_contact')
-        application = Application(first_name=first_name, other_names=other_names, courses=courses, gender=gender,
+        application = Application(first_name=first_name, other_names=other_names, campus=campus, study=study, courses=courses, gender=gender,
         Date_of_birth=Date_of_birth, residence=residence, nationality=nationality, phone=phone,
         where=where, file1=file1, file2=file2, file3=file3, email=email, other_contact=other_contact)
         application.save()
-    return render(request, 'education/application.html')
+    return render(request, 'education/home.html')
 
 
     
