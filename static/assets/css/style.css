@@ -1,19 +1,12 @@
-/*
-    
-TemplateMo 557 Grad School
 
-https://templatemo.com/tm-557-grad-school
-
-*/
 
 
 @import url(fontawesome.css);
-@import url('<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">');
 body {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Basic */
+
 
 a {
 	color: #3CF;
@@ -66,7 +59,7 @@ p {
 }
 
 
-/* Buttons */
+
 
 .main-button {
     background: transparent;
@@ -90,95 +83,7 @@ p {
   display: inline-block;
   outline: none;
 }
-/**#login-form{
-    display: none;
-}
-.form-box
-{
-    width:390px;
-    height:480px;
-    position:relative;
-    margin:2% auto;
-    background: rgba(0, 0, 0, 0.3);
-    overflow:hidden;
-    padding:10px;
-}
-.toggle-btn{
-    padding:10px 30px;
-    cursor:pointer;
-    background:transparent;
-    border:0;
-    outline: none;
-    position: relative;
-}
-#btn
-{
-    top: 0;
-    left: 0;
-    position: absolute;
-    width: 110px;
-    height: 100%;
-    background: #F3C693;
-    border-radius: 30px;
-    transition: .5s;
-}
-.input-group-login{
-     top: 150px;
-     position: absolute;
-     width: 200px;
-     transition: .5s;
-}
-.input-group-register{
-    top:90px;
-    position:absolute;
-    width:250px;
-    transition:.5s;
-}
-.input-field{
-    width: 150px;
-    padding: 10px 0;
-    margin: 5px 0;
-    border-left:0;
-    border-top:0;
-    border-right: 0; 
-    border-bottom: 1px solid #999;
-    outline:none;
-    background: transparent;
-}
-.submit-btn{
-    width: 85%;
-    padding: 10px 30px;
-    cursor: pointer;
-    display: block;
-    margin: auto;
-    background: #F3C693;
-    border: 0;
-    outline: none;
-    border-radius: 30px;
-}
-.check-box{
-    margin: 30px 10px 34px 0;
-}
-span{
-    color: #777;
-    font-size: 12px;
-    bottom: 68px;
-    position: absolute;
-}
-#login{
-   left: 50px;
-}
-#login input{
-  color: white;
-  font-size: 15;
-}
-#register{
-  left: 450px;
-}
-#register input{
-  color: white;
-  font-size: 15;
-}**/
+
 a.menu-link { display: none; }
 
 @media screen and (max-width: 950px) {
@@ -1310,7 +1215,7 @@ section.video .left-content .main-button {
     letter-spacing: 1px;
 }
 
-/* Magnific Popup CSS */
+
 .mfp-bg {
   top: 0;
   left: 0;
@@ -1613,7 +1518,7 @@ button::-moz-focus-inner {
   background: #000;
 }
 
-/* Main image in popup */
+
 img.mfp-img {
   width: auto;
   max-width: 100%;
@@ -1625,7 +1530,7 @@ img.mfp-img {
   margin: 0 auto;
 }
 
-/* The shadow behind the image */
+
 .mfp-figure {
   line-height: 0;
 }
@@ -1682,9 +1587,7 @@ img.mfp-img {
 }
 
 @media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
-  /**
-       * Remove all paddings around the image on small screen
-       */
+
   .mfp-img-mobile .mfp-image-holder {
     padding-left: 0;
     padding-right: 0;
@@ -1759,7 +1662,6 @@ img.mfp-img {
 
 
 
-/* Contact */
 
 section.contact {
     background-image: url(../images/contact-bg.jpg);

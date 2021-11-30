@@ -245,7 +245,6 @@ section#testimonials .section-subheading {
 }
 
 section#contact {
-    background-image: url(../img/backgrounds/contact-img.png);
     background-position: center;
     background-size: cover;
     padding-bottom: 110px;
@@ -253,10 +252,10 @@ section#contact {
     box-shadow: none !important;
     margin-bottom: 0px !important;
 }
-}
 
 
-}
+
+
 section#contact .section-heading {
     color: #fff !important;
 }
@@ -483,7 +482,6 @@ ul.social-buttons li a:active {
     width: 35px;
     height: 35px;
     display: block;
-    background: #FFF url(../img/options.png)no-repeat;
     left: -35px;
     position: absolute;
     cursor: pointer;
