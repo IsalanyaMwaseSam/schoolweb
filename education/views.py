@@ -55,7 +55,7 @@ def application(request):
         campus = request.POST.get('campus')
         study = request.POST.get('study')
         gender = request.POST.get('gender')
-        courses = request.POST.get('courses')
+        course = request.POST.get('course')
         Date_of_birth = request.POST.get('Date_of_birth')
         residence = request.POST.get('residence')
         nationality = request.POST.get('nationality')
@@ -66,7 +66,7 @@ def application(request):
         file3 = request.POST.get('file3')
         email = request.POST.get('email')
         other_contact = request.POST.get('other_contact')
-        application = {'first_name':first_name, 'other_names':other_names, 'campus':campus, 'study':study, 'courses':courses, 'gender':gender,
+        application = {'first_name':first_name, 'other_names':other_names, 'campus':campus, 'study':study, 'course':course, 'gender':gender,
         'Date_of_birth':Date_of_birth, 'residence':residence, 'nationality':nationality, 'phone':phone,
         'where':where, 'file1':file1, 'file2':file2, 'file3':file3, 'email':email, 'other_contact':other_contact}
     
@@ -78,6 +78,19 @@ def application(request):
         message.attach_file('file1', 'file2', 'file3')
     return render(request, 'education/application.html')
 
+def contact(request):
+    if request.method == "POST":
+        name = request.POST('name')
+        email = request.POST('email')
+        message = request.POST('message')
+        contact = {'name':name, 'email':email, 'message':message}
+
+        message = '''
+        New message: {}
+        From: {}
+        '''.format(contact['name'], contact['email'])
+        send_mail(contact, message, '', ['eazikezi1999@gmail.com'])
+    return render(request, '')
 
     
 

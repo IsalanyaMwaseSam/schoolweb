@@ -1,8 +1,8 @@
 from django.db import models
 from education.choices import *
 
-class Courses(models.Model):
-  course = models.CharField(max_length=3, null=True, blank=True, )
+class Course(models.Model):
+  course = models.CharField(max_length=100, null=True, blank=True, )
 
   def __str__(self):
     return self.course
@@ -17,7 +17,7 @@ class Application(models.Model):
   campus = models.CharField(max_length=30, blank=True, null=True, choices=CAMPUS_CHOICES)
   study = models.CharField(max_length=20, choices=STUDYTIME_CHOICES, blank=True, null=True,)
   level = models.CharField(max_length=20, choices=LEVEL_CHOICES, blank=True, null=True,)
-  course = models.ForeignKey(Courses, blank=True, null=True, on_delete=models.CASCADE)
+  course = models.ForeignKey(Course, blank=True, null=True, on_delete=models.CASCADE)
   gender = models.CharField(max_length=2, choices=GENDER_CHOICES, blank=True, null=True,)
   courses = models.BooleanField(blank=True, null=True,)
   Date_of_birth = models.CharField(null=True, max_length=15)

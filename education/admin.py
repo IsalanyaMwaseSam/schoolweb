@@ -9,3 +9,4 @@ class ApplicationAdmin(admin.ModelAdmin):
     list_filter = ['other_names', 'campus']
 # Register your models here.
 admin.site.register(Application)
+admin.site.register(Course)
