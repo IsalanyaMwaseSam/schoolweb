@@ -1,12 +1,22 @@
 from django.shortcuts import render
-from education.models import Application
 from django.core.mail import send_mail
 
 
 
 # Create your views here.
 def home(request):
+    if request.method == "POST":
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        message = request.POST.get('message')
+        recipients=['eazikezi1999@gmail.com']
+        contact = {'name':name, 'email':email, 'message':message, 'recipients':recipients}
 
+        message = '''
+        New message: {}
+        From: {}
+        '''.format(contact['message'], contact['email'])
+        send_mail(name, message, None , recipients)
     return render(request, 'education/home.html', {})
 
 def computing(request):
@@ -74,23 +84,12 @@ def application(request):
         New message: {}
         From: {}
         '''.format(application['first_name'], application['email'])
-        send_mail(application, message, '', ['eazikezi1999@gmail.com'])
+        send_mail(first_name, other_names, message, '', ['eazikezi1999@gmail.com'])
         message.attach_file('file1', 'file2', 'file3')
     return render(request, 'education/application.html')
 
-def contact(request):
-    if request.method == "POST":
-        name = request.POST('name')
-        email = request.POST('email')
-        message = request.POST('message')
-        contact = {'name':name, 'email':email, 'message':message}
 
-        message = '''
-        New message: {}
-        From: {}
-        '''.format(contact['name'], contact['email'])
-        send_mail(contact, message, '', ['eazikezi1999@gmail.com'])
-    return render(request, '')
+
 
     
 

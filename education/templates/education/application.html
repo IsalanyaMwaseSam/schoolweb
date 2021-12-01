@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
     <script src="../../ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -56,13 +58,6 @@ body {
         <li><a href="{% url 'home' %}">Home</a></li>
         <li class="has-submenu"><a href="#section2">About Us</a>
         <li class="#section2"><a href="{% url 'application' %}">Apply Now</a>
-        </li>
-          <ul class="sub-menu">
-            <li><a href="#section2">Who we are?</a></li>
-            <li><a href="#section3">What we do?</a></li>
-            <li><a href="#section3">How it works?</a></li>
-          </ul>
-        </li>
         <li class="has-submenu"><a href="#">Academics</a>
           <ul class="sub-menu">
             <li style="text-align: center;"><a href="{% url 'graduation' %}">School Of Graduate Studies</a></li>
@@ -230,11 +225,29 @@ body {
 <br>
 </div>
 
-<div style="padding-left: 50px;" class="my-button">
+<div style="padding-left: 50px; margin-bottom: 50px;" class="my-button">
     <input type="submit" value="Submit">
 </div>
-
 </form>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12"></div>
+        <div class="social">
+          <h6>Follow us</h6>
+          <a class="list__item-link list__item-link_facebook" href="https://www.facebook.com/bugemauniv.ac.ug/?_rdc=1&amp;_rdr" target="_blank"><i class="fa fa-facebook"></i> </a>
+          <a class="list__item-link list__item-link_twitter" href="https://twitter.com/UnivBugema" target="_blank"><i class="fa fa-twitter"></i> </a>
+          <a class="list__item-link list__item-link_instagram" href="https://www.instagram.com/univbugema" target="_blank"><i class="fa fa-instagram"></i> </a>
+          <a class="list__item-link list__item-link_youtube" href="https://www.youtube.com/channel/UCNbb7bqAyDBt1AqvKuCQihQ/featured" target="_blank"><i class="fa fa-youtube"></i></a>
+        </div>
+      </div>
+        <p><i class="fa fa-copyright"></i> Copyright 2020 by SamTech
+      </div>
+    </div>
+  </div>
+</footer>
+
 <script src="{% static '/vendor/jquery/jquery.min.js' %}"></script>
     <script src="{% static '/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
