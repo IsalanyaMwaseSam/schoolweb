@@ -156,8 +156,8 @@ EMAIL_HOST_PASSWORD = "tcudalqgynwnkynm"
 #MIDDLEWARE_CLASSES = (
     # Simplified static file serving.
     # https://warehouse.python.org/project/whitenoise/
-    'whitenoise.middleware.WhiteNoiseMiddleware',
-)
+   # 'whitenoise.middleware.WhiteNoiseMiddleware',
+#)
 #STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 #activate django-heroku
 django_heroku.settings(locals())
