@@ -349,6 +349,11 @@ a.menu-link { display: none; }
   height: 200px;
   padding-top: 50px;
 }
+@media (max-width: 600px) {
+  .main-menu{
+    margin-top: 10px;
+  }
+}
 
 @media (max-width: 950px) {
   .main-nav li:hover a,
