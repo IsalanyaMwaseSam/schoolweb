@@ -348,10 +348,9 @@ https://templatemo.com/tm-557-grad-school
         </div>
         <div class="col-md-6">
           <article class="video-item">
-            <div class="video-caption">
-            </div>
+        
             <figure>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/97A3QvVIYcU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="500" height="315" src="https://www.youtube.com/embed/97A3QvVIYcU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </figure>
           </article>
         </div>
@@ -401,7 +400,7 @@ https://templatemo.com/tm-557-grad-school
         </div>
         <div class="col-md-6">
           <div id="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6206770742956!2d32.64156371409373!3d0.5703006637444403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177c4be209db538d%3A0xe4ac675b7d218fc9!2sBugema%20University!5e0!3m2!1sen!2sug!4v1626777926688!5m2!1sen!2sug" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe width="500" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6206770742956!2d32.64156371409373!3d0.5703006637444403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177c4be209db538d%3A0xe4ac675b7d218fc9!2sBugema%20University!5e0!3m2!1sen!2sug!4v1626777926688!5m2!1sen!2sug" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
         </div>
       </div>
@@ -413,7 +412,7 @@ https://templatemo.com/tm-557-grad-school
       <div class="row">
         <div class="col-md-12"></div>
           <div class="social">
-            <h6>Follow us</h6>
+            <h6 style="color: white;">Follow us</h6>
             <a class="list__item-link list__item-link_facebook" href="https://www.facebook.com/bugemauniv.ac.ug/?_rdc=1&amp;_rdr" target="_blank"><i class="fa fa-facebook"></i> </a>
             <a class="list__item-link list__item-link_twitter" href="https://twitter.com/UnivBugema" target="_blank"><i class="fa fa-twitter"></i> </a>
             <a class="list__item-link list__item-link_instagram" href="https://www.instagram.com/univbugema" target="_blank"><i class="fa fa-instagram"></i> </a>
@@ -474,6 +473,10 @@ https://templatemo.com/tm-557-grad-school
             }
           });
         };
+
+        function checkSection() {
+        document.getElementById("cont").innerHTML = showSection;
+        }
 
         /*$('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
           if($(e.target).hasClass('external')) {
