@@ -1,4 +1,4 @@
-{% load static %}
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,10 +16,10 @@
     <link href="{% static '/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="{% static '/assets/css/fontawesome.css' %}">
-    <link rel="stylesheet" href="{% static '/assets/css/style.css' %}">
-    <link rel="stylesheet" href="{% static '/assets/css/owl.css">
-    <link rel="stylesheet" href="{% static '/assets/css/lightbox.css' %}">
+    <link rel="stylesheet" href="{% staticfiles '/assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% staticfiles '/assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% staticfiles '/assets/css/owl.css">
+    <link rel="stylesheet" href="{% staticfiles '/assets/css/lightbox.css' %}">
 <!--
     
 TemplateMo 557 Grad School
@@ -66,7 +66,7 @@ https://templatemo.com/tm-557-grad-school
   <!-- ***** Main Banner Area Start ***** -->
   <section class="section main-banner" id="top" data-section="section1">
       <video autoplay muted loop id="bg-video">
-          <source src="{% static '/assets/images/course-video.mp4' %}" type="video/mp4" />
+          <source src="{% staticfiles '/assets/images/course-video.mp4' %}" type="video/mp4" />
       </video>
 
       <div class="video-overlay header-text">
@@ -79,7 +79,7 @@ https://templatemo.com/tm-557-grad-school
               {% endfor %}
             {% endif %}
               <h2><em>WELCOME TO BUGEMA UNIVERSITY</em> </h2>
-              <img style="z-index: -500;"src= "{% static '/assets/images/bu.jpg' %}">
+              <img style="z-index: -500;"src= "{% staticfiles '/assets/images/bu.jpg' %}">
       </div>
   </section>
   
@@ -104,7 +104,7 @@ https://templatemo.com/tm-557-grad-school
               <article id='tabs-1'>
                 <div class="row">
                   <div class="col-md-6">
-                    <img src="{% static '/assets/images/project.jpg' %}" alt="">
+                    <img src="{% staticfiles '/assets/images/project.jpg' %}" alt="">
                   </div>
                   <div class="col-md-6">
                     <h4>Best Education</h4>
@@ -115,7 +115,7 @@ https://templatemo.com/tm-557-grad-school
               <article id='tabs-2'>
                 <div class="row">
                   <div class="col-md-6">
-                    <img src="{% static '/assets/images/choose-us-image-02.png' %}" alt="">
+                    <img src="{% staticfiles '/assets/images/choose-us-image-02.png' %}" alt="">
                   </div>
                   <div class="col-md-6">
                     <h4>Top Level</h4>
@@ -126,7 +126,7 @@ https://templatemo.com/tm-557-grad-school
               <article id='tabs-3'>
                 <div class="row">
                   <div class="col-md-6">
-                    <img src="{% static '/assets/images/choose-us-image-03.png' %}" alt="">
+                    <img src="{% staticfiles '/assets/images/choose-us-image-03.png' %}" alt="">
                   </div>
                   <div class="col-md-6">
                     <h4>Quality Service</h4>
@@ -219,116 +219,116 @@ https://templatemo.com/tm-557-grad-school
         </div>
         <div class="owl-carousel owl-theme">
           <div class="item">
-            <img src="{% static '/assets/images/graduation.jpg' %}" alt="Course #1">
+            <img src="{% staticfiles '/assets/images/graduation.jpg' %}" alt="Course #1">
             <div class="down-content">
               <h4>Excellence</h4>
               <p>At Bugema University our motto is to instill excellence in our students. We provide our students the best and equip them with knowledge and skills
               </p>
               <div class="author-image">
-                <img src="{% static '/assets/images/author-01.png' %}" alt="Author 1">
+                <img src="{% staticfiles '/assets/images/author-01.png' %}" alt="Author 1">
               </div>
             </div>
           </div>
           <div class="item">
-            <img src="{% static '/assets/images/computing.jpg' %}" alt="Course #2">
+            <img src="{% staticfiles '/assets/images/computing.jpg' %}" alt="Course #2">
             <div class="down-content">
               <h4>Information Technology</h4>
               <p>At Bugema University we have all the equipmments to ensure that our students can properly be equipped with the knowledge to help them in this technological world.</p>
               <div class="author-image">
-                <img src="{% static '/assets/images/author-02.png' %}" alt="Author 2">
+                <img src="{% staticfiles '/assets/images/author-02.png' %}" alt="Author 2">
               </div>
             </div>
           </div>
           <div class="item">
-            <img src="{% static '/assets/images/health.jpg' %}" alt="Course #3">
+            <img src="{% staticfiles '/assets/images/health.jpg' %}" alt="Course #3">
             <div class="down-content">
               <h4>Health Sciences</h4>
               <p>At Bugema University we train our future nurses and doctors with the skills needed. We also have a hospital that provides services both to community and students,well equipped with the tools and skilled medical workers.</p>
               <div class="author-image">
-                <img src="{% static '/assets/images/author-03.png' %}" alt="Author 3">
+                <img src="{% staticfilesc '/assets/images/author-03.png' %}" alt="Author 3">
               </div>
               </div>
             </div>
           </div>
           <div class="item">
-            <img src="{% static '/assets/images/informatics.jpg' %}" alt="Course #4">
+            <img src="{% staticfiles '/assets/images/informatics.jpg' %}" alt="Course #4">
             <div class="down-content">
               <h4>Communications</h4>
               <p>Training the next generation to pass on information that will impact their countries in a positive and godly way</p>
               <div class="author-image">
-                <img src="{% static '/assets/images/author-04.png' %}" alt="Author 4">
+                <img src="{% staticfiles '/assets/images/author-04.png' %}" alt="Author 4">
               </div>
             </div>
           </div>
           <div class="item">
-            <img src="{% static '/assets/images/theology.jpg' %}" alt="">
+            <img src="{% staticfiles '/assets/images/theology.jpg' %}" alt="">
             <div class="down-content">
               <h4>Theology</h4>
               <p>At Bugema University we do not only look at students education but also help them develop and grow in their spiritual life</p>
               <div class="author-image">
-                <img src="{% static '/assets/images/students.jpg' %}" alt="">
+                <img src="{% staticfiles '/assets/images/students.jpg' %}" alt="">
               </div>
               <div class="text-button-pay">
             </div>
           </div>
           <div class="item">
-            <img src="{% static '/assets/images/sports.jpg' %}" alt="">
+            <img src="{% staticfiles '/assets/images/sports.jpg' %}" alt="">
             <div class="down-content">
               <h4>Sports</h4>
               <p>At Bugema University, we recognize talents and help our students build them and expose them to the field. We have basketball, volleyball, football, rugby</p>
               <div class="author-image">
-                <img src="{% static '/assets/images/lecturers.jpg' %}" alt="">
+                <img src="{% staticfiles '/assets/images/lecturers.jpg' %}" alt="">
               </div>
             </div>
           </div>
           <div class="item">
-            <img src="{% static '/assets/images/cover.jpg' %}" alt="">
+            <img src="{% staticfiles '/assets/images/cover.jpg' %}" alt="">
             <div class="down-content">
               <h4>E-Learning</h4>
               <p>As technology is evolving rapidly, new methods of learning are coming up. One of the recent ones is E-learning.As Bugema University are adapting to these and we have an effecient e-learning system now</p>
               <div class="author-image">
-                <img src="{% static '/assets/images/lect.jpg' %}" alt="">
+                <img src="{% staticfiles '/assets/images/lect.jpg' %}" alt="">
               </div>
             </div>
           </div>
           <div class="item">
-            <img src="{% static '/assets/images/Scholarships.jpg' %}" alt="">
+            <img src="{% staticfiles '/assets/images/Scholarships.jpg' %}" alt="">
             <div class="down-content">
               <h4>Scholarships</h4>
               <p>At Bugema University we offere students scholarships based on various aspects.Sports scholarsips and educational Scholarships are all given out without discrimination</p>
               <div class="author-image">
-                <img src="{% static '/assets/images/finalist.jpg' %}" alt="">
+                <img src="{% staticfiles '/assets/images/finalist.jpg' %}" alt="">
               </div>
             </div>
           </div>
           <div class="item">
-            <img src="{% static '/assets/images/business.jpg' %}" alt="">
+            <img src="{% staticfiles '/assets/images/business.jpg' %}" alt="">
             <div class="down-content">
               <h4>Business</h4>
               <p>Our business department has various courses for students who want to embark on their business careers.</br>
                 We are here to guide them through their studies and mold better businessmen for the future.</p>
               <div class="author-image">
-                <img src="{% static '/assets/images/au.jpg' %}" alt="">
+                <img src="{% staticfiles '/assets/images/au.jpg' %}" alt="">
               </div>
             </div>
           </div>
           <div class="item">
-            <img src="{% static '/assets/images/hostels.jpg' %}" alt="">
+            <img src="{% staticfiles '/assets/images/hostels.jpg' %}" alt="">
             <div class="down-content">
               <h4>Accomodation</h4>
               <p>Bugema University has many hostels and accomodation places strategically located near the campus and with all the services.</p>
               <div class="author-image">
-                <img src="{% static '/assets/images/comment.jpg' %}" alt="">
+                <img src="{% staticfiles '/assets/images/comment.jpg' %}" alt="">
               </div>
             </div>
           </div>
           <div class="item">
-            <img src="{% static '/assets/images/lecturers.jpg' %}" alt="">
+            <img src="{% staticfiles '/assets/images/lecturers.jpg' %}" alt="">
             <div class="down-content">
               <h4>Teaching Staff</h4>
               <p>At Bugema University we have a large teaching staff of both experienced and the young talented who are able to pass on what they know effeciently to our studets.</p>
               <div class="author-image">
-                <img src="{% static '/assets/images/auth.jpg' %}" alt="">
+                <img src="{% staticfiles '/assets/images/auth.jpg' %}" alt="">
               </div>
             </div>
           </div>
@@ -427,16 +427,16 @@ https://templatemo.com/tm-557-grad-school
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
-    <script src="{% static '/vendor/jquery/jquery.min.js' %}"></script>
-    <script src="{% static '/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% staticfiles '/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% staticfiles '/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
-    <script src="{% static '/assets/js/isotope.min.js' %}"></script>
-    <script src="{% static '/assets/ts/js/owl-carousel.js' %}"></script>
-    <script src="{% static '/assets/js/lightbox.js' %}"></script>
-    <script src="{% static '/assets/js/tabs.js' %}"></script>
-    <script src="{% static '/assets/js/video.js' %}"></script>
-    <script src="{% static '/assets/js/slick-slider.js' %}"></script>
-    <script src="{% static '/assets/js/custom.js' %}"></script>
+    <script src="{% staticfiles '/assets/js/isotope.min.js' %}"></script>
+    <script src="{% staticfiles '/assets/ts/js/owl-carousel.js' %}"></script>
+    <script src="{% staticfiles '/assets/js/lightbox.js' %}"></script>
+    <script src="{% staticfiles '/assets/js/tabs.js' %}"></script>
+    <script src="{% staticfiles '/assets/js/video.js' %}"></script>
+    <script src="{% staticfiles '/assets/js/slick-slider.js' %}"></script>
+    <script src="{% staticfiles '/assets/js/custom.js' %}"></script>
     <script>
         //according to loftblog tut
         $('.nav li:first').addClass('active');
