@@ -76,16 +76,16 @@ def application(request):
         file3 = request.POST.get('file3')
         email = request.POST.get('email')
         other_contact = request.POST.get('other_contact')
-        application = {'first_name':first_name, 'other_names':other_names, 'campus':campus, 'study':study, 'course':course, 'gender':gender,
+        recipients=['eazikezi1999@gmail.com']
+        applicant = {'first_name':first_name, 'other_names':other_names, 'campus':campus, 'study':study, 'course':course, 'gender':gender,
         'Date_of_birth':Date_of_birth, 'residence':residence, 'nationality':nationality, 'phone':phone,
-        'where':where, 'file1':file1, 'file2':file2, 'file3':file3, 'email':email, 'other_contact':other_contact}
+        'where':where, 'file1':file1, 'file2':file2, 'file3':file3, 'email':email, 'other_contact':other_contact, 'recipients':recipients}
     
         message = '''
         New message: {}
         From: {}
-        '''.format(application['first_name'], application['email'])
-        send_mail(first_name, other_names, message, '', ['eazikezi1999@gmail.com'])
-        message.attach_file('file1', 'file2', 'file3')
+        '''.format(applicant['first_name'], applicant['email'])
+        send_mail(first_name, other_names, message, None, recipients)
     return render(request, 'education/application.html')
 
 
