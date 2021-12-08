@@ -1126,7 +1126,7 @@ section.video .left-content span {
 }
 
 section.video .left-content h4 {
-    margin-top: -250px;
+    margin-top: -50px;
     font-size: 30px;
     color: #fff;
     font-weight: 800;
@@ -1217,6 +1217,7 @@ section.video .left-content .main-button {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
+    
 }
 
 
