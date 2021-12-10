@@ -1183,11 +1183,7 @@ section.video .left-content .main-button {
 
 }
 
-.video-item figure {
-  position: relative;
-  width: 100%;
-  font-size: 0;
-}
+
 .video-item figure img {
   width: 100%;
 }
