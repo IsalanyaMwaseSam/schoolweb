@@ -1,6 +1,6 @@
 # schoolweb
 >A school website basically enabling people to apply online and can receive feedback on their emails. People are also able to communicate with the school and send their messages and receive replies.
->project is hosted on heroku. The link to the web application is [xulweb.herokuapp.com]
+>project is hosted on heroku. The link to the web application is [xulweb.herokuapp.com](xulweb.herokuapp.com)
 
 #Technologies used
 *Javascript
